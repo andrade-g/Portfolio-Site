@@ -2,7 +2,7 @@
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     --main-blue: hsl(214, 100%, 41%);
     --secondary-blue: hsla(214, 100%, 41%, 0.8);
 }
@@ -33,7 +33,7 @@ header {
     /*-------Type and Colors------*/
     background-color: var(--main-blue);
     color: #FFF;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 nav {
@@ -72,13 +72,23 @@ main {
     top: 80px;
     display: flexbox;
     align-content: center;
+    justify-content: center;
 }
 
+/*----Page Titles----*/
 h3 {
     font-size: 2.5rem;
     text-align: center;
     font-weight: 700;
     margin-top: 50px;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    line-height: 1.25;
 }
 
 /*------------WORK TAB------------*/
@@ -92,29 +102,27 @@ h3 {
     display: grid;
     grid-template-rows: auto auto auto;
     justify-items: center;
-    align-content: flex-end;
+    align-content: center;
     color: #FFF;
     text-align: center;
 }
 
 h1 {
     padding: 0px 10vw;
+    margin: 0;
     font-size: 3rem;
     font-weight: 700;
-    position: fixed;
-    top: calc(80px + 30vh);
 }
 
-h2 {
+h4 {
     font-size: 1.4rem;
     font-weight: 300;
 }
 
-.arrow {
-    background-color: #FFF;
-    width: 120px;
-    height: 80px;
-    margin-bottom: 40px;
+.bi-chevron-compact-down {
+    position: fixed;
+    top: 75vh;
+    left: calc(50vw - 28px)
 }
 
 /*--------Works--------*/
@@ -142,28 +150,32 @@ h2 {
     background-color: #FFF;
 }
 
-.box {
-    display: flexbox;
+h2 {
     width: 30vw;
-    height: 20vw;
-    background-color: grey;
+    font-size: 1.2rem;
+    font-weight: 600;
     text-align: center;
 }
 
+.box {
+    width: 30vw;
+    height: 20vw;
+    background-color: grey;
+}
+
 a.box {
+    display: flex;
     background-color: hsla(214, 100, 41, 0);
-    font-size: 1.4rem;
-    font-weight: 600;
     color: hsla(0, 100%, 100%, 0);
     z-index: 90;
+    align-items: center;
+    align-content: center;
 }
 
 a.box:hover {
     background-color: var(--secondary-blue);
     color: #FFF;
     cursor: pointer;
-    align-content: center;
-    align-items: center;
 }
 
 #pos1 {
@@ -185,7 +197,7 @@ a.box:hover {
 /*------------FONTS TAB------------*/
 .font-container {
     border: 1px solid black;
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr 200px;
     margin-top: 25vh;
     padding: 0 20px;
@@ -202,4 +214,44 @@ a.box:hover {
 .type-btn-container a {
     width: 200px;
     color: black;
+}
+
+/*------------ABOUT TAB------------*/
+.intro-container {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 40vw 1fr;
+    gap: 20px;
+    padding: 0 5vw;
+    align-content: center;
+}
+
+.pic-container {
+    background-color: grey;
+    width: 40vw;
+    height: 30vw;
+    grid-column: 1;
+}
+
+.intro-container h2 {
+    display: flex;
+    text-align: left;
+    font-size: 1.4rem;
+    grid-column: 2;
+    width: auto;
+    height: auto;
+    font-weight: 700;
+}
+
+.intro-container h4 {
+    display: flex;
+    grid-column: 2;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.about-text {
+    padding: 0 5vw 50px 5vw;
+    max-width: 800px;
+    min-width: 300px;
 }
