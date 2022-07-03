@@ -1,0 +1,50 @@
+/*------------ABOUT TAB------------*/
+.intro-container {
+    display: grid;
+    grid-template-columns: 40vw 1fr;
+    gap: 20px;
+    padding: 0 5vw;
+    align-content: center;
+}
+
+.pic-container {
+    background-color: grey;
+    width: 40vw;
+    height: 30vw;
+    grid-column: 1;
+}
+.intro-text-container {
+    display: flex;
+    grid-column: 2;
+    justify-content: left;
+    align-items: flex-end;
+    max-width: 1000px;
+    gap: 16px;
+}
+
+
+.intro-text-container h2{
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 700;
+    width: auto;
+    margin: 0;
+}
+
+.intro-text-container h4 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.about-text {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+#justify {
+    max-width: 800px;
+    min-width: 300px;
+    padding: 0 5vw 50px 5vw;
+}

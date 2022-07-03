@@ -1,0 +1,39 @@
+/*------------FONTS TAB------------*/
+.font-container {
+    border-top: 2px solid var(--secondary-blue);
+    border-bottom: 2px solid var(--secondary-blue);
+    display: grid;
+    grid-template-columns: 1fr 205px;
+    margin-top: 22vh;
+    padding: 0 20px;
+    height: 200px;
+    align-items: center;
+}
+
+.btns {
+    grid-column: 2;
+}
+
+.type-btn-container {
+    display: flex;
+    color: var(--main-blue);
+    background-color: #FFF;
+    margin: 5px 0;
+    height: 40px;
+    border: 2px solid var(--main-blue);
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-download {
+    margin-left: 10px;
+    align-self: flex-end;
+    padding-bottom: 11px;
+}
+
+.type-btn-container:hover {
+    cursor: pointer;
+    background-color: var(--secondary-blue);
+    color: #FFF;
+}

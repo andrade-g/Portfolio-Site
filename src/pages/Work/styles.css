@@ -1,0 +1,127 @@
+/*------------MAIN------------*/
+main {
+    position: relative;
+    top: 80px;
+    display: flexbox;
+    align-content: center;
+    justify-content: center;
+}
+
+/*----Page Titles----*/
+h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    text-decoration: none;
+    line-height: 1.25;
+}
+
+/*------------WORK TAB------------*/
+/*--------Banner--------*/
+.banner {
+    background-color: var(--secondary-blue);
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    height: 75vh;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-content: center;
+    color: #FFF;
+    text-align: center;
+}
+
+h1 {
+    padding: 0px 10vw;
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.bi-chevron-compact-down {
+    position: fixed;
+    top: 75vh;
+    left: calc(50vw - 28px)
+}
+
+/*--------Works--------*/
+.works {
+    display: inline-block;
+    position: relative;
+    top: 75vh;
+    background-color: #FFF;
+    width: 100%;
+}
+
+.work-image-grid {
+    margin: 0 0;
+    display: grid;
+    grid-template: 1fr 1fr / 30vw 30vw;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    align-content: center;
+}
+
+.margin {
+    height: 60px;
+    width: 100%;
+    background-color: #FFF;
+}
+
+h2 {
+    width: 30vw;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.box {
+    width: 30vw;
+    height: 20vw;
+    background-color: grey;
+}
+
+a.box {
+    display: flex;
+    background-color: hsla(214, 100, 41, 0);
+    color: hsla(0, 100%, 100%, 0);
+    z-index: 90;
+    align-items: center;
+    align-content: center;
+}
+
+a.box:hover {
+    background-color: var(--secondary-blue);
+    color: #FFF;
+    cursor: pointer;
+}
+
+#pos1 {
+    grid-area: 1/1 / 2/2;
+}
+
+#pos2 {
+    grid-area: 1/2 / 2/3;
+}
+
+#pos3 {
+    grid-area: 2/1 / 3/2;
+}
+
+#pos4 {
+    grid-area: 2/2 / 3/3;
+}

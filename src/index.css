@@ -1,0 +1,15 @@
+
+:root {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  --main-blue: hsl(214, 100%, 41%);
+  --secondary-blue: hsla(214, 100%, 41%, 0.8);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
