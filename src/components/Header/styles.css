@@ -19,7 +19,7 @@ header {
     /*-------Type and Colors------*/
     background-color: var(--main-blue);
     color: #FFF;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -28,7 +28,7 @@ nav {
 }
 
 .tabs a {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .selected {
@@ -39,7 +39,7 @@ nav {
 .logo {
     font-family: lores-12, sans-serif;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-align: center;
 }
 

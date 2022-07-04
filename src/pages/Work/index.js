@@ -2,7 +2,7 @@ import "./styles.css"
 export default function Work() {
     return (
         <main className="">
-            <div className="banner">
+            <div className="banner" id="fade">
                 <h1>Hi! I'm Guilherme, a designer and creative coder.</h1>
                 <h4>Check out my work below</h4>
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
@@ -25,6 +25,8 @@ export default function Work() {
                     <a className="box" id="pos4"><h2> INTERACTIVE WORK </h2></a>
                 </div>
             </div>
+            <script>
+            </script>
         </main>
     );
 }
