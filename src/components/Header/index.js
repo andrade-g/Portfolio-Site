@@ -4,7 +4,7 @@ import "./styles.css"
 import $ from 'jquery';
 
 export default function Header() {
-    const [page, setPage] = useState('work');
+    const [page, setPage] = useState('Work');
     const rotas = [{
         label: 'Work',
         to: '/'

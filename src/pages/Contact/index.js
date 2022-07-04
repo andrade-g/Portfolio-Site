@@ -4,54 +4,73 @@ export default function Contact() {
     return(
         <main>
             <h3>Let's work together!</h3>
-            <p>*form*</p>
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3" id="form_container">
-                    <h2>Contact Us</h2>
-                    <p>
-                    Please send your message below. We will get back to you at the earliest!
-                    </p>
-                    <form role="form" method="post" id="reused_form">
+            <section class="">
+                <div class="">
+                    <div class="">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <label for="message">
-                                    Message:</label>
-                                <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7"></textarea>
+                            <div class="">
+
+                                <div class="">
+                                    <div class="">
+                                        <input type="text" id="name" name="name" placeholder="Input your name here" class=""/>
+                                        <label for="name" class="">Name</label>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="">
+                                        <input type="text" id="email" name="email" placeholder="Input your email here" class=""/>
+                                        <label for="email" class="">Email</label>
+                                    </div>
+                                </div>
+
                             </div>
+                            <div class="">
+                                <div class="">
+                                    <div class="">
+                                        <input type="text" id="subject" name="subject" class="form-control"/>
+                                        <label for="subject" class="">Subject</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                        <label for="message">Your message</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
                         </div>
-                        <div class="row">
-                            <div class="col-sm-6 form-group">
-                                <label for="name">
-                                    Your Name:</label>
-                                <input type="text" class="form-control" id="name" name="name" required/>
-                            </div>
-                            <div class="col-sm-6 form-group">
-                                <label for="email">
-                                    Email:</label>
-                                <input type="email" class="form-control" id="email" name="email" required/>
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="col-sm-12 form-group">
-                                <button type="submit" class="btn btn-lg btn-default pull-right" >Send →</button>
-                            </div>
-                        </div>
-
-                    </form>
-                    <div id="success_message" style="width:100%; height:100%; display:none; ">
-                        <h3>Posted your message successfully!</h3>
+                        <div class="status"></div>
                     </div>
-                    <div id="error_message"
-                            style="width:100%; height:100%; display:none; ">
-                                <h3>Error</h3>
-                                Sorry there was an error sending your form.
+                    <div class="col-md-3 text-center">
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                <p>San Francisco, CA 94126, USA</p>
+                            </li>
 
+                            <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                                <p>+ 01 234 567 89</p>
+                            </li>
+
+                            <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                                <p>contact@mdbootstrap.com</p>
+                            </li>
+                        </ul>
                     </div>
+
                 </div>
-            </div>
+
+            </section>
         </main>
     );
 }
