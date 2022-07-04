@@ -19,11 +19,12 @@
     color: var(--main-blue);
     background-color: #FFF;
     margin: 5px 0;
-    height: 40px;
+    height: 45px;
     border: 2px solid var(--main-blue);
     border-radius: 6px;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .bi-download {
@@ -36,4 +37,5 @@
     cursor: pointer;
     background-color: var(--secondary-blue);
     color: #FFF;
+    border: none;
 }
