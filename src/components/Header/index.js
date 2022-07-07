@@ -17,7 +17,7 @@ export default function Header() {
         label: 'Contact',
         to: '/contact'
     }];
-    
+
     const [page, setPage] = useState(rotas.find(rota => rota.to === window.location.pathname).label);
     
     $(function() {
@@ -42,11 +42,9 @@ export default function Header() {
 
             <nav className="tabs">
             {rotas.map((rota, index) => (
-                <a key={index}>
-                    <Link to={rota.to} onClick={() => setPage(rota.label)} className={page == rota.label ? 'selected' : 'sublinhar-branco'}>
-                    {rota.label}
-                    </Link>
-                </a>
+                <Link key={index} to={rota.to} onClick={() => setPage(rota.label)} className={page == rota.label ? 'selected' : 'sublinhar-branco'}>
+                {rota.label}
+                </Link>
             ))}
             </nav>
             <div className="logo">Guilherme Andrade</div>
