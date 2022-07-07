@@ -24,10 +24,14 @@ export default function Header() {
             if($(window).scrollTop() > 50) {
                 $(".header").addClass("active");
                 $("a").addClass("active-a");
+                $(".sublinhar-branco").addClass("sublinhar-azul")
+                $(".sublinhar-branco").removeClass("sublinhar-branco")
             } else {
                 //remove the background property so it comes transparent again (defined in your css)
-            $(".header").removeClass("active");
-            $("a").removeClass("active-a");
+                $(".header").removeClass("active");
+                $("a").removeClass("active-a");
+                $(".sublinhar-azul").addClass("sublinhar-branco")
+                $(".sublinhar-azul").removeClass("sublinhar-azul")
             }
         });
     });
@@ -38,7 +42,7 @@ export default function Header() {
             <nav className="tabs">
             {rotas.map((rota, index) => (
                 <a key={index}>
-                    <Link to={rota.to} onClick={() => setPage(rota.label)} className={page == rota.label ? 'selected' : 'expand'}>
+                    <Link to={rota.to} onClick={() => setPage(rota.label)} className={page == rota.label ? 'selected' : 'sublinhar-branco'}>
                     {rota.label}
                     </Link>
                 </a>

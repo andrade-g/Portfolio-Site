@@ -9,7 +9,7 @@ export default function Work() {
 
     return (
         <main className="">
-            <div className="banner" id="fade">
+            <div className="banner">
                 <h1 className="banner-text">Hi! I'm Guilherme, a designer and creative coder.</h1>
                 <h4 className="banner-text">Check out my work below</h4>
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
