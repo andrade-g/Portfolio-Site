@@ -4,21 +4,22 @@ import "./styles.css"
 import $ from 'jquery';
 
 export default function Header() {
-    const [page, setPage] = useState('Work');
     const rotas = [{
         label: 'Work',
         to: '/'
-      }, {
+    }, {
         label: 'Fonts',
         to: '/fonts'
-      }, {
+    }, {
         label: 'About',
         to: '/about'
-      }, {
+    }, {
         label: 'Contact',
         to: '/contact'
-      }];
-
+    }];
+    
+    const [page, setPage] = useState(rotas.find(rota => rota.to === window.location.pathname).label);
+    
     $(function() {
         $(window).on("scroll", function() {
             if($(window).scrollTop() > 50) {
