@@ -4,7 +4,7 @@ import $ from 'jquery';
 export default function Work() {
 
     $(window).scroll(function(){
-        $(".banner-text").css("opacity", 1- $(window).scrollTop() / 250);
+        $(".banner-text").css("opacity", 1- $(window).scrollTop() / 300);
     });
 
     return (

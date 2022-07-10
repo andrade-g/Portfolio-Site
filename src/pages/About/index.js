@@ -1,10 +1,16 @@
 import "./styles.css"
-export default function() {
+export default function () {
+
     return (
         <main>
             <h3>About me</h3>
             <div className="intro-container">
-                <div className="pic-container"></div>
+                <div className="video-interaction">
+                    <script src="sketch.js"></script>
+                    <script src="pattern.js"></script>
+                    <script src="Partcls.js"></script>
+                </div>
+                {/* <iframe src="https://editor.p5js.org/andrade-g/full/gr--zwm0D" width={800} height={600}></iframe> */}
                 <div className="intro-text-container">
                     <div>
                         <h2>I'm a designer based in Brasília, Brazil.</h2>
