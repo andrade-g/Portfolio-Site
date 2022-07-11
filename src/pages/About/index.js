@@ -1,5 +1,5 @@
 import "./styles.css"
-export default function () {
+export default function About () {
 
     return (
         <main>

@@ -42,7 +42,7 @@ export default function Header() {
 
             <nav className="tabs">
             {rotas.map((rota, index) => (
-                <Link key={index} to={rota.to} onClick={() => setPage(rota.label)} className={page == rota.label ? 'selected' : 'sublinhar-branco'}>
+                <Link key={index} to={rota.to} onClick={() => setPage(rota.label)} className={page === rota.label ? 'selected' : 'sublinhar-branco'}>
                 {rota.label}
                 </Link>
             ))}
